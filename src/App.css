@@ -1,0 +1,43 @@
+/**********************************
+  Font Imports
+**********************************/
+
+/* Open Sans Font - use 'font-family: "Open Sans", sans-serif' when using this font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/**********************************
+  CSS Variables (Color Palette)
+**********************************/
+
+:root {
+	--silver: #d1d3d4;
+	--tuscany: #c9a3aa;
+	--puce: #c58b95;
+	--english-red: #b74355;
+	--scarlet-red: #ae132a;
+	--ruby-red: #991125;
+	--burgundy: #830f20;
+	--rose-wood: #570a15;
+	--dark-sienna: #2c050b;
+	--black-supporting: #000000;
+}
+
+/**********************************
+  Universal Styles
+**********************************/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/**********************************
+  Test Styles
+**********************************/
+
+.test {
+}
+
+/**********************************
+  Media Queries
+**********************************/
