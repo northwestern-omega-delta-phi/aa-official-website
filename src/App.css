@@ -10,9 +10,12 @@
 **********************************/
 
 :root {
+	--light-blue-grey: #ecf6fd;
 	--silver: #d1d3d4;
-	--tuscany: #c9a3aa;
-	--puce: #c58b95;
+	--light-tuscany: #e3cfd2;
+	--tuscany: #c8a2a8;
+	--puce: #c58c95;
+	--light-english-red: #c76675;
 	--english-red: #b74355;
 	--scarlet-red: #ae132a;
 	--ruby-red: #991125;
