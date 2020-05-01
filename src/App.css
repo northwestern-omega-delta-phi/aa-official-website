@@ -10,19 +10,28 @@
 **********************************/
 
 :root {
-	--light-blue-grey: #ecf6fd;
+	/* A greyish color with a blue tint */
+	/* --light-blue-grey: #ecf6fd; */
+
+	/* Spare shades of red between silver, scarlet, and black, respectively */
+	/* --light-tuscany: #e3cfd2; */
+	/* --tuscany: #c8a2a8; */
+	/* --puce: #c58c95; */
+	/* --light-english-red: #c76675; */
+	/* --ruby-red: #991125; */
+	/* --rose-wood: #570a15; */
+	/* --dark-sienna: #2c050b; */
+
+	/* Base crest colors excluding rivet's grey */
 	--silver: #d1d3d4;
-	--light-tuscany: #e3cfd2;
-	--tuscany: #c8a2a8;
-	--puce: #c58c95;
-	--light-english-red: #c76675;
-	--english-red: #b74355;
 	--scarlet-red: #ae132a;
-	--ruby-red: #991125;
-	--burgundy: #830f20;
-	--rose-wood: #570a15;
-	--dark-sienna: #2c050b;
+	--golden-yellow: #ffdd15;
+	--cadmium-green: #006838;
 	--black-supporting: #000000;
+
+	/* Shades of scarlet/upsdell red */
+	--english-red: #b74355;
+	--burgundy: #830f20;
 }
 
 /**********************************
