@@ -1,0 +1,67 @@
+/**********************************
+  Font Imports
+**********************************/
+
+/* Open Sans Font - use 'font-family: "Open Sans", sans-serif' when using this font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/**********************************
+  CSS Variables (Color Palette)
+**********************************/
+
+:root {
+	/* A greyish color with a blue tint */
+	/* --light-blue-grey: #ecf6fd; */
+
+	/* Spare shades of red between silver, scarlet, and black, respectively */
+	/* --light-tuscany: #e3cfd2; */
+	/* --tuscany: #c8a2a8; */
+	/* --puce: #c58c95; */
+	/* --light-english-red: #c76675; */
+	/* --ruby-red: #991125; */
+	/* --rose-wood: #570a15; */
+	/* --dark-sienna: #2c050b; */
+
+	/* Base crest colors excluding rivet's grey */
+	--silver: #d1d3d4;
+	--scarlet-red: #ae132a;
+	--golden-yellow: #ffdd15;
+	--cadmium-green: #006838;
+	--black-supporting: #000000;
+
+	/* Shades of scarlet/upsdell red */
+	--english-red: #b74355;
+	--burgundy: #830f20;
+}
+
+/**********************************
+  Universal Styles
+**********************************/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--black-supporting);
+}
+
+/**********************************
+  Test Styles
+**********************************/
+
+.test {
+}
+
+/**********************************
+  Media Queries
+**********************************/

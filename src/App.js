@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from './components/Footer';
 import './normalize.css';
+import './App.css';
 
 function App() {
 	return (
