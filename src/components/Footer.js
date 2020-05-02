@@ -1,27 +1,49 @@
 import React from 'react';
+import ImageLink from './ImageLink';
+import ODPLogo from '../assets/odp.gif';
+import FacebookLogo from '../assets/facebook.png';
+import InstagramLogo from '../assets/instagram.png';
+import TwitterLogo from '../assets/twitter.png';
+import YoutubeLogo from '../assets/youtube.png';
 
 function Footer() {
 	return (
 		<footer className='main-footer'>
 			<section className='footer-section footer-section-1'>
-				<a className='footer-logo' href='#'>
-					<img src='' alt='logo' />
-				</a>
+				<ImageLink class='main-logo' link='#' src={ODPLogo} alt='Main Logo' />
+				<h3 className='footer-section-header'>Social Media</h3>
 				<ul className='social-media-list'>
 					<li>
-						<a className='facebook-link' href='https://www.facebook.com'>
-							<img src='' alt='Facebook' />
-						</a>
+						<ImageLink
+							class='facebook-link'
+							link='https://www.facebook.com/nuodphi/'
+							src={FacebookLogo}
+							alt='Facebook'
+						/>
 					</li>
 					<li>
-						<a className='twitter-link' href='https://www.twitter.com'>
-							<img src='' alt='Twitter' />
-						</a>
+						<ImageLink
+							class='instagram-link'
+							link='https://www.instagram.com/nu.odphi/?hl=en'
+							src={InstagramLogo}
+							alt='Instagram'
+						/>
 					</li>
 					<li>
-						<a className='instagram-link' href='https://www.instagram.com'>
-							<img src='' alt='Instagram' />
-						</a>
+						<ImageLink
+							class='twitter-link'
+							link='https://twitter.com/nu_odphi?lang=en'
+							src={TwitterLogo}
+							alt='Twitter'
+						/>
+					</li>
+					<li>
+						<ImageLink
+							class='youtube-link'
+							link='https://www.youtube.com/channel/UCphGKda9od2hJabhqT75uZw'
+							src={YoutubeLogo}
+							alt='Youtube'
+						/>
 					</li>
 				</ul>
 			</section>
@@ -61,3 +83,5 @@ function Footer() {
 }
 
 export default Footer;
+
+// Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
