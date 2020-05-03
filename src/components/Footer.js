@@ -11,35 +11,35 @@ function Footer() {
 		<footer className='main-footer'>
 			<section className='footer-section footer-section-1'>
 				<ImageLink class='main-logo' link='#' src={ODPLogo} alt='Main Logo' />
-				<h3 className='footer-section-header'>Social Media</h3>
+				{/* <h3 className='footer-section-header'>Social Media</h3> */}
 				<ul className='social-media-list'>
-					<li>
+					<li className='social-media-link'>
 						<ImageLink
-							class='facebook-link'
+							class='link facebook-link'
 							link='https://www.facebook.com/nuodphi/'
 							src={FacebookLogo}
 							alt='Facebook'
 						/>
 					</li>
-					<li>
+					<li className='social-media-link'>
 						<ImageLink
-							class='instagram-link'
+							class='link instagram-link'
 							link='https://www.instagram.com/nu.odphi/?hl=en'
 							src={InstagramLogo}
 							alt='Instagram'
 						/>
 					</li>
-					<li>
+					<li className='social-media-link'>
 						<ImageLink
-							class='twitter-link'
+							class='link twitter-link'
 							link='https://twitter.com/nu_odphi?lang=en'
 							src={TwitterLogo}
 							alt='Twitter'
 						/>
 					</li>
-					<li>
+					<li className='social-media-link'>
 						<ImageLink
-							class='youtube-link'
+							class='link youtube-link'
 							link='https://www.youtube.com/channel/UCphGKda9od2hJabhqT75uZw'
 							src={YoutubeLogo}
 							alt='Youtube'
@@ -49,17 +49,16 @@ function Footer() {
 			</section>
 			<section className='footer-section footer-section-2'>
 				<h3 className='footer-section-header'>Contact Us</h3>
-				<address>
-					1987 Hype St, Apt 87 <br />
-					Evanston, IL, 60201 <br />
-					Phone: (123)456-7890 <br />
-					Email: nuodphi@gmail.org
-				</address>
+				<address className='address'>1987 Hype St, Apt 87</address>
+				<address className='address'>Evanston, IL, 60201</address>
+				<address className='address'>Phone: (123)456-7890</address>
+				<address className='address'>Email: nuodphi@gmail.org</address>
 			</section>
+
 			<section className='footer-section footer-section-3'>
 				<h3 className='footer-section-header'>Message from a Brother</h3>
-				{/*
-          I was thinking a video like the national site, but we dont have one yet
+
+				{/* I was thinking a video like the national site, but we dont have one yet
           So a quote is a sub. I will put code for a video down here though in
           case we wanna add it.
 
@@ -67,8 +66,8 @@ function Footer() {
             <source src="movie.mp4" type="video/mp4">
             <source src="movie.ogg" type="video/ogg">
             Your browser does not support the video tag.
-          </video>
-        */}
+          </video> */}
+
 				<p className='footer-message'>
 					<q>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
