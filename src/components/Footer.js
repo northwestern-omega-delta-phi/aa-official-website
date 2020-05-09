@@ -1,86 +1,74 @@
 import React from 'react';
-import ImageLink from './ImageLink';
-import ODPLogo from '../assets/odp.gif';
-import FacebookLogo from '../assets/facebook.png';
-import InstagramLogo from '../assets/instagram.png';
-import TwitterLogo from '../assets/twitter.png';
-import YoutubeLogo from '../assets/youtube.png';
+import ContactItem from './ContactItem';
+import SocialMediaItem from './SocialMediaItem';
+
+import ODPCrest from '../assets/odp.gif';
+import { ReactComponent as StreetIcon } from '../assets/location.svg';
+import { ReactComponent as PhoneIcon } from '../assets/phone.svg';
+import { ReactComponent as EmailIcon } from '../assets/email.svg';
+import { ReactComponent as FacebookIcon } from '../assets/facebook.svg';
+import { ReactComponent as InstagramIcon } from '../assets/instagram.svg';
+import { ReactComponent as TwitterIcon } from '../assets/twitter.svg';
+import { ReactComponent as YoutubeIcon } from '../assets/youtube.svg';
 
 function Footer() {
 	return (
 		<footer className='main-footer'>
-			<section className='footer-section footer-section-1'>
-				<ImageLink class='main-logo' link='#' src={ODPLogo} alt='Main Logo' />
-				{/* <h3 className='footer-section-header'>Social Media</h3> */}
-				<ul className='social-media-list'>
-					<li className='social-media-link'>
-						<ImageLink
-							class='link facebook-link'
-							link='https://www.facebook.com/nuodphi/'
-							src={FacebookLogo}
-							alt='Facebook'
-						/>
-					</li>
-					<li className='social-media-link'>
-						<ImageLink
-							class='link instagram-link'
-							link='https://www.instagram.com/nu.odphi/?hl=en'
-							src={InstagramLogo}
-							alt='Instagram'
-						/>
-					</li>
-					<li className='social-media-link'>
-						<ImageLink
-							class='link twitter-link'
-							link='https://twitter.com/nu_odphi?lang=en'
-							src={TwitterLogo}
-							alt='Twitter'
-						/>
-					</li>
-					<li className='social-media-link'>
-						<ImageLink
-							class='link youtube-link'
-							link='https://www.youtube.com/channel/UCphGKda9od2hJabhqT75uZw'
-							src={YoutubeLogo}
-							alt='Youtube'
-						/>
-					</li>
+			<section className='footer-section footer-section-left'>
+				<ul className='contact-info'>
+					<ContactItem
+						classname='street'
+						icon={<StreetIcon />}
+						contactInfo={`87 Hype St.
+						Evanston, IL, 60201`}
+					/>
+					<ContactItem
+						classname='phone'
+						icon={<PhoneIcon />}
+						contactType='phone'
+						contactInfo={`(123)456-7890`}
+					/>
+					<ContactItem
+						classname='email'
+						icon={<EmailIcon />}
+						contactType='email'
+						contactInfo={`nu.odphi@gmail.com`}
+					/>
 				</ul>
 			</section>
-			<section className='footer-section footer-section-2'>
-				<h3 className='footer-section-header'>Contact Us</h3>
-				<address className='address'>1987 Hype St, Apt 87</address>
-				<address className='address'>Evanston, IL, 60201</address>
-				<address className='address'>Phone: (123)456-7890</address>
-				<address className='address'>Email: nuodphi@gmail.org</address>
-			</section>
-
-			<section className='footer-section footer-section-3'>
-				<h3 className='footer-section-header'>Message from a Brother</h3>
-
-				{/* I was thinking a video like the national site, but we dont have one yet
-          So a quote is a sub. I will put code for a video down here though in
-          case we wanna add it.
-
-          <video width="320" height="240" controls>
-            <source src="movie.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-          </video> */}
-
-				<p className='footer-message'>
-					<q>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-						pharetra ligula non neque aliquam lobortis. Ut tincidunt est non
-						rutrum feugiat. Maecenas mauris arcu, lobortis.
-					</q>
-					- Sir Brother
+			<section className='footer-section footer-section-right'>
+				<h3 className='footer-heading'>Omega Delta Phi's Purpose</h3>
+				<p className='purpose'>
+					The purpose of this Brotherhood, a Service/Social fraternity dedicated
+					to the needs and concerns of the community, shall be to promote and
+					maintain the traditional values of Unity, Honesty, Integrity, and
+					Leadership.
 				</p>
+				<ul className='social-media-links'>
+					<SocialMediaItem
+						classname='facebook'
+						destination='https://www.facebook.com/nuodphi/'
+						icon={<FacebookIcon />}
+					/>
+					<SocialMediaItem
+						classname='instagram'
+						destination='https://www.instagram.com/nu.odphi/?hl=en'
+						icon={<InstagramIcon />}
+					/>
+					<SocialMediaItem
+						classname='twitter'
+						destination='https://twitter.com/nu_odphi?lang=en'
+						icon={<TwitterIcon />}
+					/>
+					<SocialMediaItem
+						classname='youtube'
+						destination='https://www.youtube.com/channel/UCphGKda9od2hJabhqT75uZw'
+						icon={<YoutubeIcon />}
+					/>
+				</ul>
 			</section>
 		</footer>
 	);
 }
 
 export default Footer;
-
-// Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
