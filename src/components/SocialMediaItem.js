@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ImageLink({ classname, destination, icon }) {
+function SocialMediaItem({ classname, destination, icon }) {
 	return (
 		<li className={`social-media-item social-media-item-${classname}`}>
 			<a
@@ -12,4 +12,4 @@ function ImageLink({ classname, destination, icon }) {
 	);
 }
 
-export default ImageLink;
+export default SocialMediaItem;

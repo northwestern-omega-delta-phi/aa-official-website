@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ImageLink({ classname, icon, contactType, contactInfo }) {
+function ContactItem({ classname, icon, contactType, contactInfo }) {
 	return (
 		<li className={`contact contact-${classname}`}>
 			<div className='svg-holder'>{icon}</div>
@@ -9,7 +9,7 @@ function ImageLink({ classname, icon, contactType, contactInfo }) {
 	);
 }
 
-export default ImageLink;
+export default ContactItem;
 
 /**
  * Determines which type of contact info is passed in and formats said contact info
