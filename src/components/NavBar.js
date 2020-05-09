@@ -14,11 +14,7 @@ function NavBar() {
 	return (
 		<nav className='navbar'>
 			<ul className='navbar-nav'>
-				<NavItem
-					linkName='ODPhi - AA Chapter'
-					icon={<LogoPlaceholder />}
-					logo={true}
-				/>
+				<NavItem linkName='ODPhi - AA Chapter' icon={<LogoPlaceholder />} />
 
 				<NavItem linkName='Become a Knight' icon={<KnightIcon />} />
 				<NavItem linkName='Donate' icon={<DonateIcon />} />

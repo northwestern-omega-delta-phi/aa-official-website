@@ -21,19 +21,30 @@
 :root {
 	font-size: 16px;
 	font-family: 'Open Sans';
-	--text-primary: #d1d3d4;
+	/* --text-primary: #d1d3d4;
 	--text-secondary: #d2d4bf;
-	--bg-primary: #ae132a;
-	--bg-secondary: #85b890;
+	--bg-primary: #d1d3d4;
+	--bg-secondary: #85b890; */
+
+	--primary: #c4132d;
+	--accent: #ffdd15;
+	--text-primary: #393e41;
+	--text-secondary: #474c50;
+	--bg-primary: #d1d3d4;
+	--bg-secondary: #f1f1f1;
+	--test: #000000;
 }
 
+svg {
+	fill: #d1d3d4;
+}
 /************************************
 	Main Body Styles
 ************************************/
 
 body {
-	color: black;
-	background-color: white;
+	color: var(--text-primary);
+	background-color: var(--bg-secondary);
 	margin: 0px;
 	padding: 0px;
 }
@@ -56,7 +67,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: var(--bg-primary);
+	background-color: var(--primary);
 }
 
 /************************************
@@ -67,7 +78,7 @@ body::-webkit-scrollbar-thumb {
 	width: 5rem;
 	height: 100vh;
 	position: fixed;
-	background-color: var(--bg-primary);
+	background-color: black;
 	transition: width 400ms ease;
 }
 
@@ -82,11 +93,39 @@ body::-webkit-scrollbar-thumb {
 
 .nav-item {
 	width: 100%;
+	margin: 0.5rem 0;
+	background-color: black;
+	transition: background-color 400ms ease;
+}
+
+.nav-item .nav-link {
+	color: #d1d3d4;
+	transition: color 400ms ease;
+}
+
+.nav-item svg {
+	fill: #d1d3d4;
+	transition: fill 400ms ease;
+}
+
+.nav-item:last-child,
+.nav-item:first-child {
+	margin: 0px;
+}
+.nav-item:first-child {
+	margin-bottom: 0.5rem;
+	background-color: #c4132d;
+}
+
+.nav-item:first-child svg,
+.nav-item:last-child svg {
+	fill: #d1d3d4;
 }
 
 .nav-item:last-child {
 	position: absolute;
 	bottom: 0px;
+	background-color: #c4132d;
 }
 
 .logo {
@@ -101,7 +140,7 @@ body::-webkit-scrollbar-thumb {
 	display: flex;
 	align-items: center;
 	height: 5rem;
-	color: var(--text-primary);
+	color: var(--bg-primary);
 	text-decoration: none;
 }
 
@@ -111,7 +150,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .link-text {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.6s ease-in-out;
 }
 
 /************************************
@@ -123,5 +165,35 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar:hover .link-text {
-	display: block;
+	/* display: block; */
+	visibility: visible;
+	opacity: 1;
+}
+
+.nav-item:hover {
+	background-color: #ffdd15;
+}
+
+.nav-item:first-child:hover,
+.nav-item:last-child:hover {
+	background-color: hsl(351, 82%, 35%);
+}
+
+.nav-item:hover .nav-link {
+	color: #393e41;
+}
+
+.nav-item:first-child:hover .nav-link,
+.nav-item:last-child:hover .nav-link {
+	color: #d1d3d4;
+}
+
+.nav-item:hover svg {
+	fill: #393e41;
+}
+
+.nav-item:first-child:hover svg,
+.nav-item:last-child:hover svg {
+	fill: #d1d3d4;
+	margin: none;
 }
