@@ -43,7 +43,6 @@ body {
 }
 
 .main-content {
-	margin-left: 5rem;
 	padding: 1rem;
 }
 
@@ -69,6 +68,7 @@ body::-webkit-scrollbar-thumb {
 
 svg {
 	fill: var(--text-primary);
+	display: block;
 }
 
 /************************************
@@ -76,134 +76,94 @@ svg {
 ************************************/
 
 .navbar {
-	width: 5rem;
-	height: 100vh;
-	position: fixed;
+	height: 3rem;
+	width: 100vw;
 	background-color: var(--bg-secondary);
-	transition: width 400ms ease;
 }
 
 .navbar-nav {
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
+	display: flex;
+	justify-content: space-between;
 }
 
-/************************************
-	Nav Item Styles
-************************************/
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3rem;
+}
+
+.container-left {
+	justify-content: flex-start;
+	width: 55vw;
+}
+
+.container-right {
+	justify-content: flex-end;
+	width: 30vw;
+}
+
+.container svg {
+	width: 100%;
+}
 
 .nav-item {
-	width: 100%;
-	margin: 0.5rem 0;
-	background-color: var(--bg-secondary);
-	transition: background-color 600ms ease;
+	height: 2rem;
+	width: 25%;
+	margin: 0rem 1rem;
+}
+.container-left .nav-item:first-child,
+.container-right .nav-item:last-child {
+	margin: 0rem;
+	padding: 0rem 1rem;
+}
+/* .container-left .nav-item:first-child {
+	margin-left: 0rem;
+	padding-left: 1rem;
+} */
+
+.container svg {
+	height: 1.5rem;
+	width: 1.5rem;
 }
 
-.nav-item .nav-link {
-	color: var(--text-primary);
-	transition: color 600ms ease;
-}
-
-.nav-item svg {
-	transition: fill 600ms ease;
-}
-
-/************************************
-	Nav Item Pseudo-Selector Styles
-************************************/
-
-.nav-item:last-child,
-.nav-item:first-child {
-	background-color: var(--primary);
-}
-
-.nav-item:first-child {
-	margin-top: 0rem;
-}
-
-.nav-item:first-child .link-text {
-	font-weight: bold;
-	font-size: 1.1rem;
-}
-
-.nav-item:last-child {
-	position: absolute;
-	bottom: 0px;
-	margin-bottom: 0px;
-}
-
-/************************************
-	Nav Link Styles
-************************************/
-
+.nav-item,
 .nav-link {
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	height: 5rem;
-	color: var(--bg-primary);
+	color: var(--text-primary);
 	text-decoration: none;
 }
 
-.nav-link svg {
-	min-width: 2rem;
-	margin: 0 1.5rem;
+.container-left .nav-item:first-child {
+	width: 60%;
+	background-color: var(--primary);
+	height: 100%;
 }
 
-/************************************
-	Link Text Styles
-************************************/
+.container-right .nav-item:last-child .link-text {
+	/* width: 40%; */
+	/* background-color: var(--primary); */
+	color: var(--accent);
+	height: 100%;
+}
+
+.container-right .nav-item:last-child svg {
+	fill: var(--accent);
+}
+
+.container-left .nav-item:first-child .link-text {
+	font-weight: bold;
+}
+
+.container-left .nav-item:nth-child(2) {
+	width: 40%;
+}
 
 .link-text {
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0s, opacity 0.6s ease-in-out;
-}
-
-/************************************
-	Navbar Hover Animation Styles
-************************************/
-
-.navbar:hover {
-	width: 12rem;
-}
-
-.navbar:hover .link-text {
-	visibility: visible;
-	opacity: 1;
-}
-
-/************************************
-	Nav Item Hover Animation Styles
-************************************/
-
-.nav-item:hover {
-	background-color: var(--accent);
-}
-
-.nav-item:hover .nav-link {
-	color: var(--text-secondary);
-}
-
-.nav-item:hover svg {
-	fill: var(--text-secondary);
-}
-
-/****************************************************
-	Nav Item Pseudo-Selector Hover Animation Styles
-****************************************************/
-
-.nav-item:first-child:hover,
-.nav-item:last-child:hover {
-	background-color: var(--primary-hover);
-}
-
-.nav-item:first-child:hover .nav-link,
-.nav-item:last-child:hover .nav-link {
-	color: var(--text-primary);
-}
-
-.nav-item:first-child:hover svg,
-.nav-item:last-child:hover svg {
-	fill: var(--text-primary);
+	margin: 0px 0.5rem;
 }
