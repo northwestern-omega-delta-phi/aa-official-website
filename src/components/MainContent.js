@@ -1,7 +1,5 @@
 import React from 'react';
 
-// import NavBar from './components/NavBar.js'
-
 function MainContent() {
 	return (
 		<main className='main-content'>

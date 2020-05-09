@@ -3,6 +3,7 @@
 ************************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
 /************************************
 	Universal Styles
 ************************************/
@@ -20,30 +21,23 @@
 :root {
 	font-size: 16px;
 	font-family: 'Open Sans';
-	/* --text-primary: #d1d3d4;
-	--text-secondary: #d2d4bf;
-	--bg-primary: #d1d3d4;
-	--bg-secondary: #85b890; */
 
+	--bg-primary: #f1f1f1;
+	--bg-secondary: #000000;
+	--text-primary: #d1d3d4;
+	--text-secondary: #393e41;
 	--primary: #c4132d;
+	--primary-hover: #a21026;
 	--accent: #ffdd15;
-	--text-primary: #393e41;
-	--text-secondary: #474c50;
-	--bg-primary: #d1d3d4;
-	--bg-secondary: #f1f1f1;
-	--test: #000000;
 }
 
-svg {
-	fill: #d1d3d4;
-}
 /************************************
 	Main Body Styles
 ************************************/
 
 body {
-	color: var(--text-primary);
-	background-color: var(--bg-secondary);
+	color: var(--text-secondary);
+	background-color: var(--bg-primary);
 	margin: 0px;
 	padding: 0px;
 }
@@ -62,11 +56,19 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-	background-color: black;
+	background-color: var(--bg-secondary);
 }
 
 body::-webkit-scrollbar-thumb {
 	background-color: var(--primary);
+}
+
+/************************************
+	SVG Styles
+************************************/
+
+svg {
+	fill: var(--text-primary);
 }
 
 /************************************
@@ -77,7 +79,7 @@ body::-webkit-scrollbar-thumb {
 	width: 5rem;
 	height: 100vh;
 	position: fixed;
-	background-color: black;
+	background-color: var(--bg-secondary);
 	transition: width 400ms ease;
 }
 
@@ -85,56 +87,55 @@ body::-webkit-scrollbar-thumb {
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
+
+/************************************
+	Nav Item Styles
+************************************/
 
 .nav-item {
 	width: 100%;
 	margin: 0.5rem 0;
-	background-color: black;
-	transition: background-color 400ms ease;
+	background-color: var(--bg-secondary);
+	transition: background-color 600ms ease;
 }
 
 .nav-item .nav-link {
-	color: #d1d3d4;
-	transition: color 400ms ease;
+	color: var(--text-primary);
+	transition: color 600ms ease;
 }
 
 .nav-item svg {
-	fill: #d1d3d4;
-	transition: fill 400ms ease;
+	transition: fill 600ms ease;
 }
+
+/************************************
+	Nav Item Pseudo-Selector Styles
+************************************/
 
 .nav-item:last-child,
 .nav-item:first-child {
-	margin: 0px;
+	background-color: var(--primary);
 }
 
 .nav-item:first-child {
-	margin-bottom: 0.5rem;
-	background-color: #c4132d;
+	margin-top: 0rem;
 }
 
-.nav-item:first-child svg,
-.nav-item:last-child svg {
-	fill: #d1d3d4;
+.nav-item:first-child .link-text {
+	font-weight: bold;
+	font-size: 1.1rem;
 }
 
 .nav-item:last-child {
 	position: absolute;
 	bottom: 0px;
-	background-color: #c4132d;
+	margin-bottom: 0px;
 }
 
-.logo {
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: var(--text-primary);
-	margin-bottom: 1rem;
-}
+/************************************
+	Nav Link Styles
+************************************/
 
 .nav-link {
 	display: flex;
@@ -144,25 +145,23 @@ body::-webkit-scrollbar-thumb {
 	text-decoration: none;
 }
 
-.nav-item:first-child .link-text {
-	font-weight: bold;
-	font-size: 1.1rem;
-}
-
 .nav-link svg {
 	min-width: 2rem;
 	margin: 0 1.5rem;
 }
 
+/************************************
+	Link Text Styles
+************************************/
+
 .link-text {
-	/* display: none; */
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s, opacity 0.6s ease-in-out;
 }
 
 /************************************
-	Navbar Animation Styles
+	Navbar Hover Animation Styles
 ************************************/
 
 .navbar:hover {
@@ -170,35 +169,41 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar:hover .link-text {
-	/* display: block; */
 	visibility: visible;
 	opacity: 1;
 }
 
-.nav-item:hover {
-	background-color: #ffdd15;
-}
+/************************************
+	Nav Item Hover Animation Styles
+************************************/
 
-.nav-item:first-child:hover,
-.nav-item:last-child:hover {
-	background-color: hsl(351, 82%, 35%);
+.nav-item:hover {
+	background-color: var(--accent);
 }
 
 .nav-item:hover .nav-link {
-	color: #393e41;
+	color: var(--text-secondary);
+}
+
+.nav-item:hover svg {
+	fill: var(--text-secondary);
+}
+
+/****************************************************
+	Nav Item Pseudo-Selector Hover Animation Styles
+****************************************************/
+
+.nav-item:first-child:hover,
+.nav-item:last-child:hover {
+	background-color: var(--primary-hover);
 }
 
 .nav-item:first-child:hover .nav-link,
 .nav-item:last-child:hover .nav-link {
-	color: #d1d3d4;
-}
-
-.nav-item:hover svg {
-	fill: #393e41;
+	color: var(--text-primary);
 }
 
 .nav-item:first-child:hover svg,
 .nav-item:last-child:hover svg {
-	fill: #d1d3d4;
-	margin: none;
+	fill: var(--text-primary);
 }
