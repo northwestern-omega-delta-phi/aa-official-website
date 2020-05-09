@@ -32,10 +32,6 @@
 	--accent: #ffdd15;
 }
 
-p {
-	margin: 0px;
-}
-
 /************************************
 	SVG Styles
 ************************************/
@@ -66,45 +62,45 @@ svg {
 ************************************/
 
 .footer-section-left {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 25vw;
+	width: 40vw;
+	margin-left: 5rem;
 }
 
-.main-logo {
-	height: 3rem;
-	width: auto;
-	display: block;
+.footer-heading {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	color: var(--primary);
 }
 
-.contact-info {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
+.purpose {
+	font-family: serif;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	width: 26rem;
+}
+
+.social-media-links {
 	list-style: none;
 	padding: 0;
-}
-
-.contact {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 1rem;
+	margin-top: 3rem;
 }
 
-.contact a {
-	text-decoration: none;
+.social-media-item {
+	margin: 0rem 1rem;
 }
 
-.svg-holder {
-	margin-right: 1rem;
+.social-media-item:first-child {
+	margin-left: 0rem;
 }
 
-.contact svg {
-	fill: white;
+.social-media-item svg {
+	transition: fill 500ms ease;
+}
+
+.social-media-item:hover svg {
+	fill: var(--primary);
 }
 
 /************************************
@@ -113,42 +109,33 @@ svg {
 
 .footer-section-right {
 	width: 40vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.footer-heading {
-	font-size: 2rem;
-	font-weight: bold;
-	margin: 1rem 0rem;
-	color: var(--primary);
-}
-
-.purpose {
-	font-family: serif;
-	font-size: 1rem;
-	line-height: 1.5rem;
-}
-
-.social-media-links {
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	list-style: none;
 	padding: 0;
+}
+
+.contact {
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	margin-top: 3rem;
+	align-items: center;
+	margin: 1rem;
 }
 
-.social-media-item {
-	margin: 0rem 1rem;
+.contact-street p {
+	margin: 0px;
 }
 
-.social-media-item svg {
-	transition: fill 500ms ease;
+.contact a {
+	text-decoration: none;
 }
 
-.social-media-item:first-child {
-	margin-left: 0rem;
-}
-
-.social-media-item:hover svg {
-	fill: var(--primary);
+.svg-holder {
+	margin-right: 1rem;
 }

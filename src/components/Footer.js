@@ -2,7 +2,6 @@ import React from 'react';
 import ContactItem from './ContactItem';
 import SocialMediaItem from './SocialMediaItem';
 
-import ODPCrest from '../assets/odp.gif';
 import { ReactComponent as StreetIcon } from '../assets/location.svg';
 import { ReactComponent as PhoneIcon } from '../assets/phone.svg';
 import { ReactComponent as EmailIcon } from '../assets/email.svg';
@@ -15,28 +14,6 @@ function Footer() {
 	return (
 		<footer className='main-footer'>
 			<section className='footer-section footer-section-left'>
-				<ul className='contact-info'>
-					<ContactItem
-						classname='street'
-						icon={<StreetIcon />}
-						contactInfo={`87 Hype St.
-						Evanston, IL, 60201`}
-					/>
-					<ContactItem
-						classname='phone'
-						icon={<PhoneIcon />}
-						contactType='phone'
-						contactInfo={`(123)456-7890`}
-					/>
-					<ContactItem
-						classname='email'
-						icon={<EmailIcon />}
-						contactType='email'
-						contactInfo={`nu.odphi@gmail.com`}
-					/>
-				</ul>
-			</section>
-			<section className='footer-section footer-section-right'>
 				<h3 className='footer-heading'>Omega Delta Phi's Purpose</h3>
 				<p className='purpose'>
 					The purpose of this Brotherhood, a Service/Social fraternity dedicated
@@ -64,6 +41,27 @@ function Footer() {
 						classname='youtube'
 						destination='https://www.youtube.com/channel/UCphGKda9od2hJabhqT75uZw'
 						icon={<YoutubeIcon />}
+					/>
+				</ul>
+			</section>
+			<section className='footer-section footer-section-right'>
+				<ul className='contact-info'>
+					<ContactItem
+						classname='street'
+						icon={<StreetIcon />}
+						contactInfo={`87 Hype St. Evanston, IL, 60201`}
+					/>
+					<ContactItem
+						classname='phone'
+						icon={<PhoneIcon />}
+						contactType='phone'
+						contactInfo={`(123)456-7890`}
+					/>
+					<ContactItem
+						classname='email'
+						icon={<EmailIcon />}
+						contactType='email'
+						contactInfo={`nu.odphi@gmail.com`}
 					/>
 				</ul>
 			</section>
