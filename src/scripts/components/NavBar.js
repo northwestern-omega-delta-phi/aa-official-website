@@ -2,12 +2,12 @@ import React from 'react';
 
 import NavItem from './NavItem.js';
 
-import { ReactComponent as LogoPlaceholder } from '../assets/logo_placeholder.svg';
-import { ReactComponent as KnightIcon } from '../assets/knight.svg';
-import { ReactComponent as DonateIcon } from '../assets/donate.svg';
-import { ReactComponent as AboutIcon } from '../assets/about.svg';
-import { ReactComponent as BrothersIcon } from '../assets/brothers.svg';
-import { ReactComponent as LoginIcon } from '../assets/login.svg';
+import { ReactComponent as LogoPlaceholder } from '../../assets/logo_placeholder.svg';
+import { ReactComponent as KnightIcon } from '../../assets/knight.svg';
+import { ReactComponent as DonateIcon } from '../../assets/donate.svg';
+import { ReactComponent as AboutIcon } from '../../assets/about.svg';
+import { ReactComponent as BrothersIcon } from '../../assets/brothers.svg';
+import { ReactComponent as LoginIcon } from '../../assets/login.svg';
 
 function NavBar() {
 	return (
