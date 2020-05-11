@@ -49,7 +49,7 @@ svg {
 .main-footer {
 	height: 50vh;
 	width: 100vw;
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	background-color: var(--bg-secondary);
 	display: flex;
@@ -64,6 +64,10 @@ svg {
 .footer-section-left {
 	width: 40vw;
 	margin-left: 5rem;
+}
+
+.footer-heading.small-media-size {
+	display: none;
 }
 
 .footer-heading {
@@ -138,4 +142,60 @@ svg {
 
 .svg-holder {
 	margin-right: 1rem;
+}
+
+.contact svg {
+	fill: var(--primary);
+}
+
+/************************************
+	Media Queries
+************************************/
+@media (max-width: 889px) {
+	.footer-heading,
+	.purpose {
+		display: none;
+	}
+
+	.footer-heading.small-media-size {
+		display: block;
+		margin-bottom: 2rem;
+	}
+
+	.main-footer {
+		flex-direction: column;
+	}
+
+	.footer-section-left {
+		margin: 0px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100vw;
+	}
+}
+
+@media (max-width: 689px) {
+	.footer-heading.small-media-size {
+		display: none;
+	}
+
+	.social-media-links {
+		margin-top: 3rem;
+	}
+}
+
+@media (max-width: 399px) {
+	svg {
+		height: 2.25rem;
+		width: 2.25rem;
+	}
+	.social-media-item {
+		margin: 0px 0.5rem;
+	}
+
+	.social-media-item:hover svg {
+		fill: white;
+	}
 }

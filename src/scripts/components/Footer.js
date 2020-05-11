@@ -14,6 +14,9 @@ function Footer() {
 	return (
 		<footer className='main-footer'>
 			<section className='footer-section footer-section-left'>
+				<h3 className='footer-heading small-media-size'>
+					Omega Delta Phi - Alpha Alpha Chapter
+				</h3>
 				<h3 className='footer-heading'>Omega Delta Phi's Purpose</h3>
 				<p className='purpose'>
 					The purpose of this Brotherhood, a Service/Social fraternity dedicated
