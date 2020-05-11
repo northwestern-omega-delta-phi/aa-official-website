@@ -2,13 +2,13 @@ import React from 'react';
 import ContactItem from './ContactItem';
 import SocialMediaItem from './SocialMediaItem';
 
-import { ReactComponent as StreetIcon } from '../assets/location.svg';
-import { ReactComponent as PhoneIcon } from '../assets/phone.svg';
-import { ReactComponent as EmailIcon } from '../assets/email.svg';
-import { ReactComponent as FacebookIcon } from '../assets/facebook.svg';
-import { ReactComponent as InstagramIcon } from '../assets/instagram.svg';
-import { ReactComponent as TwitterIcon } from '../assets/twitter.svg';
-import { ReactComponent as YoutubeIcon } from '../assets/youtube.svg';
+import { ReactComponent as StreetIcon } from '../../assets/location.svg';
+import { ReactComponent as PhoneIcon } from '../../assets/phone.svg';
+import { ReactComponent as EmailIcon } from '../../assets/email.svg';
+import { ReactComponent as FacebookIcon } from '../../assets/facebook.svg';
+import { ReactComponent as InstagramIcon } from '../../assets/instagram.svg';
+import { ReactComponent as TwitterIcon } from '../../assets/twitter.svg';
+import { ReactComponent as YoutubeIcon } from '../../assets/youtube.svg';
 
 function Footer() {
 	return (
