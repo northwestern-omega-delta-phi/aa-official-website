@@ -4,12 +4,35 @@
 
 /* Open Sans Font - use 'font-family: "Open Sans", sans-serif' when using this font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/**********************************
+  Font Definitions
+**********************************/
+
+@font-face {
+	font-family: 'Grad';
+	src: url(../assets/fonts/Grad.ttf);
+}
+
+@font-face {
+	font-family: 'Grad';
+	src: url(../assets/fonts/Grad-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Grad';
+	src: url(../assets/fonts/Grad-Italic.ttf);
+	font-style: italic, oblique;
+}
+
 /**********************************
   CSS Variables (Color Palette)
 **********************************/
 
 :root {
-	--heading-font: 'Open Sans';
+	--heading-font: 'Open Sans', sans-serif;
+	--copy-font: 'Grad', serif;
 	--bg-primary: #f1f1f1;
 	--bg-secondary: #000000;
 	--text-primary: #d1d3d4;
