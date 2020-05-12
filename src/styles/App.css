@@ -159,7 +159,11 @@ svg {
 
 	.footer-heading.small-media-size {
 		display: block;
-		margin-bottom: 2rem;
+		margin-bottom: 0px;
+	}
+
+	.social-media-links {
+		margin-top: 1.5rem;
 	}
 
 	.main-footer {
