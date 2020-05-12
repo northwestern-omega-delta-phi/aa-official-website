@@ -15,13 +15,13 @@
 }
 
 @font-face {
-	font-family: 'Grad';
+	font-family: 'GradBold';
 	src: url(../assets/fonts/Grad-Bold.ttf);
 	font-weight: bold;
 }
 
 @font-face {
-	font-family: 'Grad';
+	font-family: 'GradItalic';
 	src: url(../assets/fonts/Grad-Italic.ttf);
 	font-style: italic, oblique;
 }
@@ -40,6 +40,7 @@
 	--primary: #c4132d;
 	--primary-hover: #a21026;
 	--accent: #ffdd15;
+	font-size: 16px;
 }
 
 /**********************************
@@ -55,9 +56,145 @@
   Test Styles
 **********************************/
 
-.test {
+body {
+	margin: 0px;
+	background: linear-gradient(
+		var(--bg-secondary),
+		var(--primary),
+		var(--bg-secondary)
+	);
+	color: var(--text-secondary);
+	font-family: var(--copy-font);
+	font-style: none;
 }
 
+.recruitment-page {
+	width: 80vw;
+	min-height: 100vh;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--bg-primary);
+}
+
+.page-heading,
+.instructions h3,
+.form h3,
+.submit-button {
+	font-family: var(--heading-font);
+}
+
+.page-heading {
+	font-size: 2.75rem;
+}
+
+.instructions h3,
+.form h3 {
+	font-size: 2rem;
+}
+
+.instructions {
+	align-self: flex-start;
+	margin: 0 17%;
+}
+.instructions li {
+	margin: 2rem 0rem;
+	font-size: 1.2rem;
+}
+
+.form form {
+	/* display: flex;
+	flex-direction: column;
+	align-items: center; */
+}
+
+.form h3 {
+	margin-bottom: 4rem;
+}
+
+.input-field {
+	position: relative;
+	height: 5rem;
+	width: 51%;
+}
+
+.input-field input {
+	position: absolute;
+	background: transparent;
+	border: 0px;
+	box-shadow: none;
+	outline: none;
+	font-size: 1rem;
+	color: var(--bg-secondary);
+	width: 100%;
+}
+
+.input-field label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #707172;
+	pointer-events: none;
+	display: block;
+	transition: 0.5s;
+}
+
+.input-field input:focus + label,
+.input-field input:valid + label {
+	transform: translateY(-35px);
+	font-size: 1.1rem;
+	color: var(--bg-primary);
+	background-color: var(--primary);
+	padding: 2px 6px;
+	border-radius: 0.2rem;
+}
+
+.input-field span {
+	position: absolute;
+	display: block;
+	top: 1.5rem;
+	right: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--text-primary);
+}
+
+.input-field span::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--primary);
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s ease-in-out;
+}
+.input-field input:hover ~ span::before,
+.input-field input:focus ~ span::before,
+.input-field input:valid ~ span::before {
+	transform: scaleX(1);
+	transform-origin: left;
+	transition: transform 0.5s ease-in-out;
+}
+
+.form button {
+	background-color: var(--primary);
+	color: white;
+	border: none;
+	border-radius: 0.2rem;
+	padding: 0.75rem 1.75rem;
+	font-size: 1.75rem;
+	margin-bottom: 2rem;
+	transition: background-color 0.5s, font-size 0.5s;
+}
+
+.form button:hover {
+	background-color: var(--primary-hover);
+	font-size: 1.8rem;
+}
 /**********************************
   Media Queries
 **********************************/

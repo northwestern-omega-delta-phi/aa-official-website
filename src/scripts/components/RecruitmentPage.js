@@ -13,41 +13,41 @@ function RecruitmentPage() {
 				frameborder='0'
 				allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
 				allowfullscreen></iframe>
-			<figure className='instructions'>
-				<figcaption>
-					<h3>How to become a Knight</h3>
-				</figcaption>
-				<ol>
-					<li>Attend one Informational</li>
-					<li>Attend one Social Event</li>
-					<li>Fill out the application you receive after steps 1 and 2</li>
-					<li>Interview with the active house</li>
-				</ol>
-			</figure>
+			<ol className='instructions'>
+				<li>Attend one Informational</li>
+				<li>Attend one Social Event</li>
+				<li>Fill out the application you receive after steps 1 and 2</li>
+				<li>Interview with the active house</li>
+			</ol>
 			<figure className='form'>
 				<figcaption>
-					<h3>Fill out the form if you are interested</h3>
+					<h3>Fill out this form if you are interested!</h3>
 				</figcaption>
 				<form>
 					<div className='input-field'>
-						<label for='name'>Please enter your Full Name</label>
 						<input id='name' name='name' required type='text' />
+						<label for='name'>Please enter your Full Name</label>
+						<span></span>
 					</div>
 					<div className='input-field'>
-						<label for='year'>Please enter your School Year</label>
 						<input id='year' name='year' required type='number' />
+						<label for='year'>Please enter your School Year</label>
+						<span></span>
 					</div>
 					<div className='input-field'>
-						<label for='email'>Please enter your Email</label>
 						<input id='email' name='email' required type='email' />
+						<label for='email'>Please enter your Email</label>
+						<span></span>
 					</div>
 					<div className='input-field'>
-						<label for='major'>Please enter your Major</label>
 						<input id='major' name='major' required type='text' />
+						<label for='major'>Please enter your Major</label>
+						<span></span>
 					</div>
 					<div className='input-field'>
-						<label for='fun-fact'>Please enter a Fun Fact about yourself</label>
 						<input id='fun-fact' name='fun-fact' required type='text' />
+						<label for='fun-fact'>Please enter a Fun Fact about yourself</label>
+						<span></span>
 					</div>
 
 					<button type='submit' className='submit-button'>
