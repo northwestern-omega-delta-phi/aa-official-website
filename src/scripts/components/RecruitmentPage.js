@@ -13,11 +13,13 @@ function RecruitmentPage() {
 				frameborder='0'
 				allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
 				allowfullscreen></iframe>
+			<h3>Steps to Take</h3>
 			<ol className='instructions'>
 				<li>Attend one Informational</li>
 				<li>Attend one Social Event</li>
 				<li>Fill out the application you receive after steps 1 and 2</li>
 				<li>Interview with the active house</li>
+				<li>Complete the 8-week educational process</li>
 			</ol>
 			<figure className='form'>
 				<figcaption>
