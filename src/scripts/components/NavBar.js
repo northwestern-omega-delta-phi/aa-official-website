@@ -13,20 +13,23 @@ function NavBar() {
 	return (
 		<nav className='navbar'>
 			<ul className='navbar-nav'>
-				<div className='container container-left'>
-					<NavItem
-						linkName='Omega Delta Phi - AA Chapter'
-						icon={<LogoPlaceholder />}
-					/>
-					<NavItem linkName='Become a Knight' icon={<KnightIcon />} />
-					<NavItem linkName='Donate' icon={<DonateIcon />} />
-				</div>
-
-				<div className='container container-right'>
-					<NavItem linkName='About' icon={<AboutIcon />} />
-					<NavItem linkName='Brothers' icon={<BrothersIcon />} />
+				<ul className='container nav-left'>
+					<li className='container nav-left-container-left'>
+						<NavItem
+							linkName='Omega Delta Phi - AA Chapter'
+							icon={<LogoPlaceholder />}
+						/>
+					</li>
+					<li className='container nav-left-container-right'>
+						<NavItem linkName='About' icon={<AboutIcon />} />
+						<NavItem linkName='Brothers' icon={<BrothersIcon />} />
+						<NavItem linkName='Become a Knight' icon={<KnightIcon />} />
+						<NavItem linkName='Donate' icon={<DonateIcon />} />
+					</li>
+				</ul>
+				<li className='container nav-right'>
 					<NavItem linkName='Login' icon={<LoginIcon />} />
-				</div>
+				</li>
 			</ul>
 		</nav>
 	);
