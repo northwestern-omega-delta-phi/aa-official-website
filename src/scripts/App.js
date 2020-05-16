@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/App.css';
-import '../styles/normalize.css';
+import '../App.min.css';
 
 import RecruitmentPage from './components/RecruitmentPage';
 

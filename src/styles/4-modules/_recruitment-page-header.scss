@@ -1,0 +1,36 @@
+/*===================================================
+		Omega Delta Phi - Alpha Alpha Website
+		Updated: May 16th, 2020 @ 12:40 pm EST
+		Author: Javier Francisco Cuadra
+===================================================*/
+
+.recruitment-page__header {
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.recruitment-page__header,
+.recruitment-page__video {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.recruitment-page__video {
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 1;
+	transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+	transition: 1s opacity;
+	-webkit-transition-position: fixed;
+	position: fixed;
+}

@@ -1,0 +1,45 @@
+@media (min-width: $extra-large-breakpoint) {
+	.recruitment-page__heading--long {
+		display: inline;
+		font-family: $heading-font;
+	}
+}
+
+@media (min-width: $large-breakpoint) {
+	.recruitment-page__form-header--long {
+		display: block;
+	}
+
+	.recruitment-page__form-header--long {
+		display: none;
+	}
+}
+
+@media (min-width: $medium-breakpoint) {
+	.recruitment-page__main-content {
+		width: 80vw;
+	}
+	.recruitment-page__input-field,
+	.recruitment-page__input {
+		width: 51%;
+		margin: 0rem;
+	}
+}
+
+@media (min-width: $small-breakpoint) {
+	.recruitment-page__label {
+		display: none;
+	}
+	.recruitment-page__label--large {
+		display: inline;
+	}
+
+	.recruitment-page__form-figure {
+		width: 80%;
+	}
+
+	.recruitment-page__instruction {
+		margin: 2rem 0rem;
+		font-size: 1.2rem;
+	}
+}
