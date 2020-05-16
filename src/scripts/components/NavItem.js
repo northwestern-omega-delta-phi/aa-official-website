@@ -2,10 +2,12 @@ import React from 'react';
 
 function NavItem(props) {
 	return (
-		<li className='nav-item'>
-			<a href='#' className={'nav-link'}>
+		<li className={`navbar__nav-item ${props.itemModifier || ''}`}>
+			<a href='#' className='navbar__nav-link'>
 				{props.icon}
-				<span className='link-text'>{props.linkName}</span>
+				<span className={`navbar__link-text${props.linkTextModifier || ''}`}>
+					{props.linkName}
+				</span>
 			</a>
 		</li>
 	);

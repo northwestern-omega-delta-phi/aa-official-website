@@ -1,0 +1,146 @@
+:root {
+	font-size: 16px;
+	font-family: 'Open Sans';
+
+	--bg-primary: #f1f1f1;
+	--bg-secondary: #000000;
+	--text-primary: #d1d3d4;
+	--text-secondary: #393e41;
+	--primary: #c4132d;
+	--primary-hover: #a21026;
+	--accent: #ffdd15;
+}
+
+/************************************
+	~.navbar__link-icon Styles
+************************************/
+
+.navbar__link-icon {
+	fill: var(--text-primary);
+	height: 1.5rem;
+	width: 1.5rem;
+	transition: fill 500ms ease;
+}
+
+/************************************
+	~Navbar Static Styles
+************************************/
+
+.navbar__list {
+	background-color: var(--bg-secondary);
+	margin: 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar-nav-small-screen {
+	display: none;
+}
+/************************************
+	~Navbar Container Styles
+************************************/
+
+.navbar__section,
+.navbar__sub-section {
+	display: flex;
+	height: 3rem;
+}
+
+/************************************
+	~Nav Item Styles
+************************************/
+
+.navbar__nav-item {
+	display: flex;
+	align-items: center;
+	transition: background-color 500ms ease;
+}
+
+.navbar__nav-item {
+	padding: 0rem 1rem;
+}
+
+.navbar__sub-section--left .navbar__nav-item--logo {
+	background-color: var(--primary);
+}
+
+/************************************
+	~Nav Link Styles
+************************************/
+
+.navbar__nav-link {
+	color: var(--text-primary);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+/************************************
+	~Nav Link Content Styles
+************************************/
+
+.navbar__link-icon--login {
+	fill: var(--accent);
+}
+
+.navbar__link-text {
+	margin: 0px 0.5rem;
+	transition: color 500ms ease;
+}
+.navbar__link-text--login {
+	color: var(--accent);
+}
+
+.navbar__link-text--logo {
+	font-weight: bold;
+}
+
+/************************************
+	~Navbar Hover Styles
+************************************/
+
+.navbar__nav-item:hover,
+.navbar__nav-item:focus {
+	background-color: var(--primary);
+}
+
+.navbar__nav-item:hover .navbar__link-text,
+.navbar__nav-item:focus .navbar__link-text {
+	color: white;
+}
+
+.navbar__nav-item:hover .navbar__link-icon,
+.navbar__nav-item:focus .navbar__link-icon {
+	fill: white;
+}
+
+/************************************
+	~Media Queries
+************************************/
+@media (min-width: $large-breakpoint) {
+	.navbar__link-text {
+		display: none;
+	}
+
+	.navbar__link-text {
+		display: initial;
+	}
+}
+
+@media (min-width: $small-breakpoint) {
+	.navbar__link-text--logo {
+		display: none;
+	}
+}
+
+@media (max-width: 339px) {
+	.navbar__sub-section--left {
+		display: none;
+	}
+}
+
+@media (max-width: 279px) {
+	.navbar {
+		display: none;
+	}
+}

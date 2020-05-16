@@ -12,23 +12,43 @@ import { ReactComponent as LoginIcon } from '../../assets/login.svg';
 function NavBar() {
 	return (
 		<nav className='navbar'>
-			<ul className='navbar-nav'>
-				<ul className='container nav-left'>
-					<li className='container nav-left-container-left'>
+			<ul className='navbar__list'>
+				<ul className='navbar__section navbar__section--left'>
+					<li className='navbar__sub-section navbar__sub-section--left'>
 						<NavItem
 							linkName='Omega Delta Phi - AA Chapter'
-							icon={<LogoPlaceholder />}
+							itemModifier=' navbar__nav-item--logo'
+							linkTextModifier=' navbar__link-text--logo'
+							icon={<LogoPlaceholder className='navbar__link-icon' />}
 						/>
 					</li>
-					<li className='container nav-left-container-right'>
-						<NavItem linkName='About' icon={<AboutIcon />} />
-						<NavItem linkName='Brothers' icon={<BrothersIcon />} />
-						<NavItem linkName='Become a Knight' icon={<KnightIcon />} />
-						<NavItem linkName='Donate' icon={<DonateIcon />} />
+					<li className='navbar__sub-section navbar__sub-section--right'>
+						<NavItem
+							linkName='About'
+							icon={<AboutIcon className='navbar__link-icon' />}
+						/>
+						<NavItem
+							linkName='Brothers'
+							icon={<BrothersIcon className='navbar__link-icon' />}
+						/>
+						<NavItem
+							linkName='Become a Knight'
+							icon={<KnightIcon className='navbar__link-icon' />}
+						/>
+						<NavItem
+							linkName='Donate'
+							icon={<DonateIcon className='navbar__link-icon' />}
+						/>
 					</li>
 				</ul>
-				<li className='container nav-right'>
-					<NavItem linkName='Login' icon={<LoginIcon />} />
+				<li className='navbar__section navbar__section--right'>
+					<NavItem
+						linkName='Login'
+						linkTextModifier=' navbar__link-text--login'
+						icon={
+							<LoginIcon className='navbar__link-icon navbar__link-icon--login' />
+						}
+					/>
 				</li>
 			</ul>
 		</nav>

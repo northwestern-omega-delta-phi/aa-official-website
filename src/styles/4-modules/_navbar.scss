@@ -1,0 +1,123 @@
+/************************************
+	~Navbar Static Styles
+************************************/
+
+.navbar__list {
+	background-color: $supporting-black;
+	margin: 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar-nav-small-screen {
+	display: none;
+}
+
+/************************************
+	~Navbar Section Styles
+************************************/
+
+.navbar__section,
+.navbar__sub-section {
+	display: flex;
+	height: 3rem;
+}
+
+/************************************
+	~Nav Item Styles
+************************************/
+
+.navbar__nav-item {
+	display: flex;
+	align-items: center;
+	transition: background-color $standard-animation-time ease;
+}
+
+.navbar__nav-item {
+	padding: 0rem 1rem;
+}
+
+.navbar__nav-item--logo {
+	background-color: $primary;
+}
+
+/************************************
+	~Nav Link Styles
+************************************/
+
+.navbar__nav-link {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+/************************************
+	~Nav Link Content Styles
+************************************/
+
+svg.navbar__link-icon {
+	fill: $supporting-text-light;
+	height: 1.5rem;
+	width: 1.5rem;
+	transition: fill $standard-animation-time ease;
+}
+
+svg.navbar__link-icon.navbar__link-icon--login {
+	fill: $accent1;
+}
+
+.navbar__link-text {
+	margin: 0px 0.5rem;
+	transition: color $standard-animation-time ease;
+	color: $supporting-text-light;
+	font-family: $heading-font;
+	display: none;
+}
+
+.navbar__link-text.navbar__link-text--login {
+	color: $accent1;
+}
+
+.navbar__link-text.navbar__link-text--logo {
+	font-weight: bold;
+}
+
+/************************************
+	~Navbar Hover Styles
+************************************/
+
+.navbar__nav-item:hover,
+.navbar__nav-item:focus {
+	background-color: $primary;
+}
+
+.navbar__nav-item:hover .navbar__link-text,
+.navbar__nav-item:focus .navbar__link-text {
+	color: $bg;
+}
+
+.navbar__nav-item:hover .navbar__link-icon,
+.navbar__nav-item:focus .navbar__link-icon {
+	fill: $bg;
+}
+
+/************************************
+	~Media Queries
+************************************/
+@media (min-width: 1000px) {
+	.navbar__link-text {
+		display: inline;
+	}
+}
+
+@media (min-width: $medium-breakpoint) {
+	.navbar__link-text--logo {
+		display: inline;
+	}
+}
+
+@media (max-width: $small-breakpoint) {
+	.navbar__sub-section--left {
+		display: none;
+	}
+}

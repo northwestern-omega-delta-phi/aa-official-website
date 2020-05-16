@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/normalize.css';
-import '../styles/App.css';
+import '../App.min.css';
 
 import NavBar from './components/NavBar';
 import MainContent from './components/MainContent';
