@@ -2,7 +2,7 @@ import React from 'react';
 
 import NavItem from './NavItem.js';
 
-import { ReactComponent as LogoPlaceholder } from '../../assets/logo_placeholder.svg';
+import Logo from '../../assets/logo';
 import { ReactComponent as KnightIcon } from '../../assets/knight.svg';
 import { ReactComponent as DonateIcon } from '../../assets/donate.svg';
 import { ReactComponent as AboutIcon } from '../../assets/about.svg';
@@ -19,7 +19,9 @@ function NavBar() {
 							linkName='Omega Delta Phi - AA Chapter'
 							itemModifier=' navbar__nav-item--logo'
 							linkTextModifier=' navbar__link-text--logo'
-							icon={<LogoPlaceholder className='navbar__link-icon' />}
+							icon={
+								<Logo className='navbar__link-icon navbar__link-icon--logo' />
+							}
 						/>
 					</li>
 					<li className='navbar__sub-section navbar__sub-section--right'>

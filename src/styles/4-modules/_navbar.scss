@@ -62,6 +62,11 @@ svg.navbar__link-icon {
 	transition: fill $standard-animation-time ease;
 }
 
+svg.navbar__link-icon.navbar__link-icon--logo {
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
 svg.navbar__link-icon.navbar__link-icon--login {
 	fill: $accent1;
 }
