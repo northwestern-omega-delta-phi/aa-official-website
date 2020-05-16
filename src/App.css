@@ -1,24 +1,3 @@
-/************************************
-	Imported Styles
-************************************/
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-
-/************************************
-	Universal Styles
-************************************/
-
-*::before,
-*::after,
-* {
-	box-sizing: border-box;
-	color: var(--text-primary);
-}
-
-/************************************
-	Root Styles
-************************************/
-
 :root {
 	font-size: 16px;
 	font-family: 'Open Sans';
@@ -36,17 +15,19 @@
 	SVG Styles
 ************************************/
 
-svg {
+.footer__icon {
 	fill: white;
 	height: 2.5rem;
 	width: 2.5rem;
+	transition: fill 500ms ease;
+	margin-right: 1rem;
 }
 
 /************************************
 	Footer Styles
 ************************************/
 
-.main-footer {
+.footer {
 	height: 50vh;
 	width: 100vw;
 	position: fixed;
@@ -61,49 +42,45 @@ svg {
 	Left Section Styles
 ************************************/
 
-.footer-section-left {
+.footer__section--left {
 	width: 40vw;
 	margin-left: 5rem;
 }
 
-.footer-heading.small-media-size {
+.footer__heading.small-media-size {
 	display: none;
 }
 
-.footer-heading {
+.footer__heading {
 	font-size: 2rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
 	color: var(--primary);
 }
 
-.purpose {
+.footer__text {
 	font-family: serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	width: 26rem;
 }
 
-.social-media-links {
+.footer__social-media-list {
 	list-style: none;
 	padding: 0;
 	display: flex;
 	margin-top: 3rem;
 }
 
-.social-media-item {
+.footer__social-media-list-item {
 	margin: 0rem 1rem;
 }
 
-.social-media-item:first-child {
+.footer__social-media-list-item:first-child {
 	margin-left: 0rem;
 }
 
-.social-media-item svg {
-	transition: fill 500ms ease;
-}
-
-.social-media-item:hover svg {
+.social-media-item:hover .footer__icon {
 	fill: var(--primary);
 }
 
@@ -111,14 +88,14 @@ svg {
 	Right Section Styles
 ************************************/
 
-.footer-section-right {
+.footer__section--right {
 	width: 40vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.contact-info {
+.footer__contact-list {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -126,32 +103,20 @@ svg {
 	padding: 0;
 }
 
-.contact {
+.footer__contact-list-item {
 	display: flex;
 	align-items: center;
 	margin: 1rem;
 }
 
-.contact-street p {
-	margin: 0px;
-}
-
-.contact a {
-	text-decoration: none;
-}
-
-.svg-holder {
-	margin-right: 1rem;
-}
-
-.contact svg {
+.footer__icon--contact {
 	fill: var(--primary);
 }
 
 /************************************
 	Media Queries
 ************************************/
-@media (max-width: 889px) {
+/* @media (max-width: 889px) {
 	.footer-heading,
 	.purpose {
 		display: none;
@@ -191,7 +156,7 @@ svg {
 }
 
 @media (max-width: 399px) {
-	svg {
+	.footer__icon {
 		height: 2.25rem;
 		width: 2.25rem;
 	}
@@ -202,4 +167,4 @@ svg {
 	.social-media-item:hover svg {
 		fill: white;
 	}
-}
+} */

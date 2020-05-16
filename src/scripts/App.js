@@ -1,7 +1,6 @@
 import React from 'react';
 import Footer from './components/Footer';
-import '../styles/normalize.css';
-import '../styles/App.css';
+import '../App.min.css';
 
 function App() {
 	return (

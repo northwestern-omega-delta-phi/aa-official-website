@@ -1,12 +1,10 @@
 import React from 'react';
 
-function SocialMediaItem({ classname, destination, icon }) {
+function SocialMediaItem(props) {
 	return (
-		<li className={`social-media-item social-media-item-${classname}`}>
-			<a
-				href={destination}
-				className={`social-media-link social-media-link-${classname}`}>
-				{icon}
+		<li className={`footer__social-media-list-item`}>
+			<a href={props.destination} className={`footer__link`}>
+				{props.icon}
 			</a>
 		</li>
 	);
