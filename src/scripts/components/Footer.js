@@ -2,25 +2,27 @@ import React from 'react';
 import ContactItem from './ContactItem';
 import SocialMediaItem from './SocialMediaItem';
 
-import { ReactComponent as StreetIcon } from '../../assets/location.svg';
-import { ReactComponent as PhoneIcon } from '../../assets/phone.svg';
-import { ReactComponent as EmailIcon } from '../../assets/email.svg';
-import { ReactComponent as FacebookIcon } from '../../assets/facebook.svg';
-import { ReactComponent as InstagramIcon } from '../../assets/instagram.svg';
-import { ReactComponent as TwitterIcon } from '../../assets/twitter.svg';
-import { ReactComponent as YoutubeIcon } from '../../assets/youtube.svg';
+import Logo from '../../assets/images/logo'
+import { ReactComponent as StreetIcon } from '../../assets/images/location.svg';
+import { ReactComponent as PhoneIcon } from '../../assets/images/phone.svg';
+import { ReactComponent as EmailIcon } from '../../assets/images/email.svg';
+import { ReactComponent as FacebookIcon } from '../../assets/images/facebook.svg';
+import { ReactComponent as InstagramIcon } from '../../assets/images/instagram.svg';
+import { ReactComponent as TwitterIcon } from '../../assets/images/twitter.svg';
+import { ReactComponent as YoutubeIcon } from '../../assets/images/youtube.svg';
 
 function Footer() {
 	return (
 		<footer className='footer'>
 			<section className='footer__section footer__section--left'>
-				<h3 className='footer__heading'>Omega Delta Phi's Purpose</h3>
+      <Logo className="footer__icon footer__icon--logo" />
+				{/* <h3 className='footer__heading'>Omega Delta Phi's Purpose</h3>
 				<p className='footer__text'>
 					The purpose of this Brotherhood, a Service/Social fraternity dedicated
 					to the needs and concerns of the community, shall be to promote and
 					maintain the traditional values of Unity, Honesty, Integrity, and
 					Leadership.
-				</p>
+				</p> */}
 				<ul className='footer__social-media-list'>
 					<SocialMediaItem
 						destination='https://www.facebook.com/nuodphi/'

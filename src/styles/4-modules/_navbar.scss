@@ -3,14 +3,14 @@
 ************************************/
 
 .navbar__list {
-	background-color: $supporting-black;
-	margin: 0px;
-	display: flex;
-	justify-content: space-between;
+  background-color: $supporting-black;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar-nav-small-screen {
-	display: none;
+  display: none;
 }
 
 /************************************
@@ -19,8 +19,8 @@
 
 .navbar__section,
 .navbar__sub-section {
-	display: flex;
-	height: 3rem;
+  display: flex;
+  height: 3rem;
 }
 
 /************************************
@@ -28,17 +28,17 @@
 ************************************/
 
 .navbar__nav-item {
-	display: flex;
-	align-items: center;
-	transition: background-color $standard-animation-time ease;
+  display: flex;
+  align-items: center;
+  transition: background-color $standard-animation-time ease;
 }
 
 .navbar__nav-item {
-	padding: 0rem 1rem;
+  padding: 0rem 1rem;
 }
 
 .navbar__nav-item--logo {
-	background-color: $primary;
+  background-color: $primary;
 }
 
 /************************************
@@ -46,9 +46,9 @@
 ************************************/
 
 .navbar__nav-link {
-	text-decoration: none;
-	display: flex;
-	align-items: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 /************************************
@@ -56,30 +56,30 @@
 ************************************/
 
 svg.navbar__link-icon {
-	fill: $supporting-text-light;
-	height: 1.5rem;
-	width: 1.5rem;
-	transition: fill $standard-animation-time ease;
+  fill: $supporting-text-light;
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: fill $standard-animation-time ease;
 }
 
 svg.navbar__link-icon.navbar__link-icon--login {
-	fill: $accent1;
+  fill: $accent1;
 }
 
 .navbar__link-text {
-	margin: 0px 0.5rem;
-	transition: color $standard-animation-time ease;
-	color: $supporting-text-light;
-	font-family: $heading-font;
-	display: none;
+  margin: 0px 0.5rem;
+  transition: color $standard-animation-time ease;
+  color: $supporting-text-light;
+  font-family: $heading-font;
+  display: none;
 }
 
 .navbar__link-text.navbar__link-text--login {
-	color: $accent1;
+  color: $accent1;
 }
 
 .navbar__link-text.navbar__link-text--logo {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 /************************************
@@ -88,36 +88,36 @@ svg.navbar__link-icon.navbar__link-icon--login {
 
 .navbar__nav-item:hover,
 .navbar__nav-item:focus {
-	background-color: $primary;
+  background-color: $primary;
 }
 
 .navbar__nav-item:hover .navbar__link-text,
 .navbar__nav-item:focus .navbar__link-text {
-	color: $bg;
+  color: $bg;
 }
 
 .navbar__nav-item:hover .navbar__link-icon,
 .navbar__nav-item:focus .navbar__link-icon {
-	fill: $bg;
+  fill: $bg;
 }
 
 /************************************
 	~Media Queries
 ************************************/
 @media (min-width: 1000px) {
-	.navbar__link-text {
-		display: inline;
-	}
+  .navbar__link-text {
+    display: inline;
+  }
 }
 
 @media (min-width: $medium-breakpoint) {
-	.navbar__link-text--logo {
-		display: inline;
-	}
+  .navbar__link-text--logo {
+    display: inline;
+  }
 }
 
 @media (max-width: $small-breakpoint) {
-	.navbar__sub-section--left {
-		display: none;
-	}
+  .navbar__sub-section--left {
+    display: none;
+  }
 }
