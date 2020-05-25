@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./scripts/components/Footer";
-import "../App.min.css";
+import "./App.min.css";
 
 function App() {
   return (
