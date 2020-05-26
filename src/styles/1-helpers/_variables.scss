@@ -1,39 +1,39 @@
-/*===================================================
+/* ==================================================
 		Omega Delta Phi - Alpha Alpha Website
-		Updated: May 15th, 2020 @ 7:05 pm
+		Updated: May 15th, 2020
 		Author: Javier Francisco Cuadra
-===================================================*/
+================================================== */
 
 /****************************************************
 	Font Declarations
 ****************************************************/
 
 // Open Sans Font Import
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 // Grad Fonts
 @font-face {
-	font-family: 'Grad';
-	src: url(/Users/reflex6988/Documents/ODPhi/aa-official-website/src/assets/1-fonts/Grad.ttf);
+  font-family: Grad;
+  src: url("./assets/fonts/Grad.ttf");
 }
 
 @font-face {
-	font-family: 'GradBold';
-	src: url(/Users/reflex6988/Documents/ODPhi/aa-official-website/src/assets/1-fonts/Grad-Bold.ttf);
-	font-weight: bold;
+  font-family: GradBold;
+  font-weight: 700;
+  src: url("./assets/fonts/Grad-Bold.ttf");
 }
 
 @font-face {
-	font-family: 'GradItalic';
-	src: url(/Users/reflex6988/Documents/ODPhi/aa-official-website/src/assets/1-fonts/Grad-Italic.ttf);
-	font-style: italic, oblique;
+  font-family: GradItalic;
+  font-style: italic, oblique;
+  src: url("./assets/fonts/Grad-Italic.ttf");
 }
 
 // Variables
-$heading-font: 'Open Sans', sans-serif;
-$copy-font: 'Grad', serif;
-$copy-font-bold: 'GradBold', serif;
-$copy-font-italic: 'GradItalic', serif;
+$heading-font: "Open Sans", sans-serif;
+$copy-font: "Grad", serif;
+$copy-font-bold: "GradBold", serif;
+$copy-font-italic: "GradItalic", serif;
 
 /****************************************************
 	Color Declarations
@@ -46,7 +46,7 @@ $tertiary: #b8213a;
 $quaternary: #d72638;
 
 // Neutrals
-$supporting-black: #000000;
+$supporting-black: #000;
 $header-text: #2b303a;
 $supporting-text-dark: #3b3d3f;
 $sub-headings: #606567;
@@ -54,7 +54,7 @@ $supporting-text-light: #d1d3d4;
 
 $large-block-bg: #f1e9db;
 $small-block-bg: #ffeaee;
-$bg: #ffffff;
+$bg: #fff;
 
 // Accents
 $accent1: #ffdd15;
@@ -70,6 +70,7 @@ $small-breakpoint: 600px; // Apply to media queries as (max-width: $small-breakp
 $medium-breakpoint: 768px; // Apply to media queries as (min-width: $medium-breakpoint) for medium size devices
 $large-breakpoint: 992px; // Apply to media queries as (min-width: $large-breakpoint) for large devices
 $extra-large-breakpoint: 1200px; // Apply to media queries as (min-width: $extra-large-breakpoint) for extra large devices
+
 /****************************************************
 	Timing Variables
 ****************************************************/

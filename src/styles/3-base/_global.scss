@@ -1,40 +1,41 @@
-/*===================================================
+/* ==================================================
 		Omega Delta Phi - Alpha Alpha Website
-		Updated: May 16th, 2020 @ 12:00 am EST
+		Updated: May 16th, 2020
 		Author: Javier Francisco Cuadra
-===================================================*/
+================================================== */
 
 body {
-	background-color: $bg;
-	margin: 0px;
-	padding: 0px;
-	overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: $bg;
 }
 
 body::-webkit-scrollbar {
-	width: 0.25rem;
+  /* prettier-ignore */
+  width: .25rem;
 }
 
 body::-webkit-scrollbar-track {
-	background-color: $supporting-black;
+  background-color: $supporting-black;
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: $primary;
+  background-color: $primary;
 }
 
 main {
-	padding: 2rem;
+  padding: 2rem;
 }
 
 ul {
-	padding: 0px;
+  padding: 0;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-	margin: 0px;
+  margin: 0;
 }

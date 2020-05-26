@@ -1,45 +1,52 @@
+/* ==================================================
+		Omega Delta Phi - Alpha Alpha Website
+		Updated: May 16th, 2020
+		Author: Javier Francisco Cuadra
+================================================== */
+
 @media (min-width: $extra-large-breakpoint) {
-	.recruitment-page__heading--long {
-		display: inline;
-		font-family: $heading-font;
-	}
+  .recruitment-page__heading--long {
+    display: inline;
+    font-family: $heading-font;
+  }
 }
 
 @media (min-width: $large-breakpoint) {
-	.recruitment-page__form-header--long {
-		display: block;
-	}
+  .recruitment-page__form-header--long {
+    display: block;
+  }
 
-	.recruitment-page__form-header--long {
-		display: none;
-	}
+  .recruitment-page__form-header {
+    display: none;
+  }
 }
 
 @media (min-width: $medium-breakpoint) {
-	.recruitment-page__main-content {
-		width: 80vw;
-	}
-	.recruitment-page__input-field,
-	.recruitment-page__input {
-		width: 51%;
-		margin: 0rem;
-	}
+  .recruitment-page__main-content {
+    width: 80vw;
+  }
+
+  .recruitment-page__input-field {
+    width: 51%;
+    margin: 0;
+  }
 }
 
 @media (min-width: $small-breakpoint) {
-	.recruitment-page__label {
-		display: none;
-	}
-	.recruitment-page__label--large {
-		display: inline;
-	}
+  .recruitment-page__label {
+    display: none;
+  }
 
-	.recruitment-page__form-figure {
-		width: 80%;
-	}
+  .recruitment-page__label--large {
+    display: inline;
+  }
 
-	.recruitment-page__instruction {
-		margin: 2rem 0rem;
-		font-size: 1.2rem;
-	}
+  .recruitment-page__form-figure {
+    width: 80%;
+  }
+
+  .recruitment-page__instruction {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+  }
 }

@@ -1,109 +1,119 @@
+/* ==================================================
+		Omega Delta Phi - Alpha Alpha Website
+		Updated: May 16th, 2020
+		Author: Javier Francisco Cuadra
+================================================== */
+
 .recruitment-page__form-figure {
-	width: 100%;
-	margin: auto;
+  width: 100%;
+  margin: auto;
 }
 
 .recruitment-page__form-header--long,
 .recruitment-page__form-header {
-	text-align: center;
-	font-size: 2rem;
-	color: $primary;
-	margin-bottom: 3rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: $primary;
+  text-align: center;
 }
 
 .recruitment-page__form-header--long {
-	display: none;
+  display: none;
 }
 
 .recruitment-page__form {
-	margin: 0px 40px;
+  margin: 0 40px;
 }
 
 .recruitment-page__input-field {
-	position: relative;
-	height: 5rem;
+  position: relative;
+  height: 5rem;
 }
 
 .recruitment-page__input {
-	position: absolute;
-	background: transparent;
-	border: 0px;
-	box-shadow: none;
-	outline: none;
-	font-size: 1rem;
-	color: $supporting-black;
-	width: 100%;
+  position: absolute;
+  width: 100%;
+  font-size: 1rem;
+  color: $supporting-black;
+  background: transparent;
+  border: 0;
+  outline: none;
+  box-shadow: none;
 }
 
+/* prettier-ignore */
 .recruitment-page__label {
-	position: absolute;
-	top: 0;
-	left: 0;
-	color: $sub-headings;
-	pointer-events: none;
-	display: block;
-	transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  color: $sub-headings;
+  pointer-events: none;
+  transition: .5s;
 }
 
 .recruitment-page__label--large {
-	display: none;
+  display: none;
 }
 
-.recruitment-page__input:focus + .recruitment-page__label,
-.recruitment-page__input:valid + .recruitment-page__label,
-.recruitment-page__input:focus + .recruitment-page__label--large,
-.recruitment-page__input:valid + .recruitment-page__label--large {
-	transform: translateY(-35px);
-	font-size: 1.1rem;
-	color: $large-block-bg;
-	background-color: $quaternary;
-	padding: 2px 6px;
-	border-radius: 0.2rem;
+/* TODO: Email input does not keep below styles when invalid. Look up solution */
+
+/* prettier-ignore */
+.recruitment-page__input:focus ~ .recruitment-page__label,
+.recruitment-page__input:active ~ .recruitment-page__label,
+.recruitment-page__input:valid ~ .recruitment-page__label{
+  padding: 2px 6px;
+  font-size: 1.1rem;
+  color: $large-block-bg;
+  background-color: $quaternary;
+  border-radius: .2rem;
+  transform: translateY(-35px);
 }
 
 .recruitment-page__input-underline {
-	position: absolute;
-	display: block;
-	top: 1.5rem;
-	right: 0;
-	width: 100%;
-	height: 2px;
-	background-color: $supporting-black;
+  position: absolute;
+  top: 1.5rem;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: $supporting-black;
 }
 
 .recruitment-page__input-underline::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: $quaternary;
-	transform: scaleX(0);
-	transform-origin: right;
-	transition: transform $standard-animation-time ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: $quaternary;
+  transition: transform $standard-animation-time ease-in-out;
+  transform: scaleX(0);
+  transform-origin: right;
 }
 .recruitment-page__input:hover ~ .recruitment-page__input-underline::before,
 .recruitment-page__input:focus ~ .recruitment-page__input-underline::before,
 .recruitment-page__input:valid ~ .recruitment-page__input-underline::before {
-	transform: scaleX(1);
-	transform-origin: left;
-	transition: transform $standard-animation-time ease-in-out;
+  transition: transform $standard-animation-time ease-in-out;
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
+/* prettier-ignore */
 .recruitment-page__submit-button {
-	background-color: $quaternary;
-	color: lighten($supporting-text-light, $amount: 50%);
-	border: none;
-	outline: none;
-	border-radius: 0.2rem;
-	padding: 0.75rem 1.75rem;
-	font-size: 1.75rem;
-	margin-bottom: 2rem;
-	transition: background-color $standard-animation-time ease-in-out;
+  padding: .75rem 1.75rem;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  color: lighten($supporting-text-light, $amount: 50%);
+  background-color: $quaternary;
+  border: none;
+  border-radius: .2rem;
+  outline: none;
+  transition: background-color $standard-animation-time ease-in-out;
 }
 
 .recruitment-page__submit-button:hover,
 .recruitment-page__submit-button:focus {
-	background-color: $secondary;
+  background-color: $secondary;
 }
