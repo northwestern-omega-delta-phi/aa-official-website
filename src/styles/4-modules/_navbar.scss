@@ -3,10 +3,10 @@
 ************************************/
 
 .navbar__list {
-  background-color: $supporting-black;
-  margin: 0px;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  background-color: $supporting-black;
 }
 
 .navbar-nav-small-screen {
@@ -30,11 +30,8 @@
 .navbar__nav-item {
   display: flex;
   align-items: center;
+  padding: 0 1rem;
   transition: background-color $standard-animation-time ease;
-}
-
-.navbar__nav-item {
-  padding: 0rem 1rem;
 }
 
 .navbar__nav-item--logo {
@@ -46,9 +43,9 @@
 ************************************/
 
 .navbar__nav-link {
-  text-decoration: none;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 /************************************
@@ -56,27 +53,29 @@
 ************************************/
 
 svg.navbar__link-icon {
-  fill: $supporting-text-light;
-  height: 1.5rem;
   width: 1.5rem;
+  height: 1.5rem;
   transition: fill $standard-animation-time ease;
+  fill: $supporting-text-light;
 }
 
-svg.navbar__link-icon.navbar__link-icon--logo {
-  height: 2.5rem;
+.navbar__link-icon.navbar__link-icon--logo {
   width: 2.5rem;
+  height: 2.5rem;
 }
 
 svg.navbar__link-icon.navbar__link-icon--login {
   fill: $accent1;
 }
 
+/* prettier-ignore */
 .navbar__link-text {
-  margin: 0px 0.5rem;
-  transition: color $standard-animation-time ease;
-  color: $supporting-text-light;
-  font-family: $heading-font;
   display: none;
+  margin: 0 .5rem;
+  font-family: $heading-font;
+
+  color: $supporting-text-light;
+  transition: color $standard-animation-time ease;
 }
 
 .navbar__link-text.navbar__link-text--login {
@@ -84,7 +83,7 @@ svg.navbar__link-icon.navbar__link-icon--login {
 }
 
 .navbar__link-text.navbar__link-text--logo {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /************************************
@@ -101,8 +100,8 @@ svg.navbar__link-icon.navbar__link-icon--login {
   color: $bg;
 }
 
-.navbar__nav-item:hover .navbar__link-icon,
-.navbar__nav-item:focus .navbar__link-icon {
+.navbar__nav-item:hover svg.navbar__link-icon,
+.navbar__nav-item:focus svg.navbar__link-icon {
   fill: $bg;
 }
 
