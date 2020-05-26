@@ -1,0 +1,78 @@
+/* ==================================================
+		Omega Delta Phi - Alpha Alpha Website
+		Updated: May 15th, 2020
+		Author: Javier Francisco Cuadra
+================================================== */
+
+/****************************************************
+	Font Declarations
+****************************************************/
+
+// Open Sans Font Import
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+// Grad Fonts
+@font-face {
+  font-family: Grad;
+  src: url("./assets/fonts/Grad.ttf");
+}
+
+@font-face {
+  font-family: GradBold;
+  font-weight: 700;
+  src: url("./assets/fonts/Grad-Bold.ttf");
+}
+
+@font-face {
+  font-family: GradItalic;
+  font-style: italic, oblique;
+  src: url("./assets/fonts/Grad-Italic.ttf");
+}
+
+// Variables
+$heading-font: "Open Sans", sans-serif;
+$copy-font: "Grad", serif;
+$copy-font-bold: "GradBold", serif;
+$copy-font-italic: "GradItalic", serif;
+
+/****************************************************
+	Color Declarations
+****************************************************/
+
+// Primaries (Reds)
+$primary: #c4132d; // To be used for buttons & header
+$secondary: #a21026; // To be used on hovers and gradients
+$tertiary: #b8213a;
+$quaternary: #d72638;
+
+// Neutrals
+$supporting-black: #000;
+$header-text: #2b303a;
+$supporting-text-dark: #3b3d3f;
+$sub-headings: #606567;
+$supporting-text-light: #d1d3d4;
+
+$large-block-bg: #f1e9db;
+$small-block-bg: #ffeaee;
+$bg: #fff;
+
+// Accents
+$accent1: #ffdd15;
+$accent2: #0075f2;
+$accent3: #00f2f2;
+$accent4: #98ce00;
+
+/****************************************************
+	Media Query Breakpoint
+****************************************************/
+
+$small-breakpoint: 600px; // Apply to media queries as (max-width: $small-breakpoint) for extra small devices and (min-width: $small-breakpoint) for small devices
+$medium-breakpoint: 768px; // Apply to media queries as (min-width: $medium-breakpoint) for medium size devices
+$large-breakpoint: 992px; // Apply to media queries as (min-width: $large-breakpoint) for large devices
+$extra-large-breakpoint: 1200px; // Apply to media queries as (min-width: $extra-large-breakpoint) for extra large devices
+
+/****************************************************
+	Timing Variables
+****************************************************/
+
+$standard-animation-time: 500ms;

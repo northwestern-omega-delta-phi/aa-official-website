@@ -1,0 +1,41 @@
+/* ==================================================
+		Omega Delta Phi - Alpha Alpha Website
+		Updated: May 16th, 2020
+		Author: Javier Francisco Cuadra
+================================================== */
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: $bg;
+}
+
+body::-webkit-scrollbar {
+  /* prettier-ignore */
+  width: .25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: $supporting-black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $primary;
+}
+
+main {
+  padding: 2rem;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
