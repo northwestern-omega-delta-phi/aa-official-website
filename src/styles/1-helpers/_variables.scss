@@ -9,25 +9,25 @@
 ****************************************************/
 
 // Open Sans Font Import
-// @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
-// // Grad Fonts
-// @font-face {
-//   font-family: Grad;
-//   src: url("./assets/fonts/Grad.ttf");
-// }
+// Grad Fonts
+@font-face {
+  font-family: "Grad";
+  src: url(/Users/reflex6988/Documents/ODPhi/aa-official-website/src/assets/1-fonts/Grad.ttf);
+}
 
-// @font-face {
-//   font-family: GradBold;
-//   font-weight: 700;
-//   src: url("./assets/fonts/Grad-Bold.ttf");
-// }
+@font-face {
+  font-family: "GradBold";
+  src: url(/Users/reflex6988/Documents/ODPhi/aa-official-website/src/assets/1-fonts/Grad-Bold.ttf);
+  font-weight: bold;
+}
 
-// @font-face {
-//   font-family: GradItalic;
-//   font-style: italic, oblique;
-//   src: url("./assets/fonts/Grad-Italic.ttf");
-// }
+@font-face {
+  font-family: "GradItalic";
+  src: url(/Users/reflex6988/Documents/ODPhi/aa-official-website/src/assets/1-fonts/Grad-Italic.ttf);
+  font-style: italic, oblique;
+}
 
 // Variables
 $heading-font: "Open Sans", sans-serif;
