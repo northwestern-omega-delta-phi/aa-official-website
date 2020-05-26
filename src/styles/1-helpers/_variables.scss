@@ -13,20 +13,20 @@
 
 // Grad Fonts
 @font-face {
-  font-family: "Grad";
-  src: url(/Users/reflex6988/Documents/ODPhi/aa-official-website/src/assets/1-fonts/Grad.ttf);
+  font-family: Grad;
+  src: url("./assets/fonts/Grad.ttf");
 }
 
 @font-face {
-  font-family: "GradBold";
-  src: url(/Users/reflex6988/Documents/ODPhi/aa-official-website/src/assets/1-fonts/Grad-Bold.ttf);
-  font-weight: bold;
+  font-family: GradBold;
+  font-weight: 700;
+  src: url("./assets/fonts/Grad-Bold.ttf");
 }
 
 @font-face {
-  font-family: "GradItalic";
-  src: url(/Users/reflex6988/Documents/ODPhi/aa-official-website/src/assets/1-fonts/Grad-Italic.ttf);
+  font-family: GradItalic;
   font-style: italic, oblique;
+  src: url("./assets/fonts/Grad-Italic.ttf");
 }
 
 // Variables
