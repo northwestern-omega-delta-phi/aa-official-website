@@ -5,7 +5,7 @@ import './normalize.css';
 function App() {
 	return (
 		<div className='App'>
-			<p className='test'></p>
+			<p className='test'>Hello, world!</p>
 		</div>
 	);
 }
