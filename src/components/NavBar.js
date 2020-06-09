@@ -2,12 +2,12 @@ import React from "react";
 
 import NavItem from "./NavItem.js";
 
-import Logo from "../../assets/images/logo";
-import { ReactComponent as KnightIcon } from "../../assets/images/knight.svg";
-import { ReactComponent as DonateIcon } from "../../assets/images/donate.svg";
-import { ReactComponent as AboutIcon } from "../../assets/images/about.svg";
-import { ReactComponent as BrothersIcon } from "../../assets/images/brothers.svg";
-import { ReactComponent as LoginIcon } from "../../assets/images/login.svg";
+import Logo from "../assets/images/logo";
+import { ReactComponent as KnightIcon } from "../assets/images/knight.svg";
+import { ReactComponent as DonateIcon } from "../assets/images/donate.svg";
+import { ReactComponent as AboutIcon } from "../assets/images/about.svg";
+import { ReactComponent as BrothersIcon } from "../assets/images/brothers.svg";
+import { ReactComponent as LoginIcon } from "../assets/images/login.svg";
 
 function NavBar() {
   return (
